@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 5% 0 5%;
+    background-color: rgb(123, 179, 108);
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    text-shadow: 2px 2px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+
+header {
+    opacity: 0.7;
+    flex: 100%;
+    height: 15vh;
+}
+
+header>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 90px;
+    width: 120px;
+}
+
+/* NAV SECTION */
+nav {
+    background-color: rgb(12, 54, 4);
+    flex: 100%;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    font-size: 20px;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    padding: 10px;
+}
+
+nav ul li:hover {
+    background-color: #fcfcfcfc;
+    cursor: pointer;
+    color: rgb(12, 54, 4);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(146, 220, 164);
+}
+
+
+
+/* MAIN SECTION */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    column-gap: 2rem;
+    overflow: scroll;
+}
+
+.section-background {
+    background-image: url(images/background.jpg);
+    background-size: 100% 100%;
+    height: 500px;
+    position: relative;
+}
+
+section article {
+    background-color: white;
+    overflow: scroll;
+    height: 35vh;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    line-height: 30px;
+    color: #edf4f0;
+}
+
+article {
+    flex: 1;
+}
+
+article>img {
+    width: 100%;
+    height: 60%;
+}
+
+.content>p {
+    font-size: 20px;
+    text-shadow: 1px 1px #022303;
+    text-align: left;
+}
+
+.content>button {
+    background-color: #022303;
+    border: none;
+    color: rgb(236, 241, 237);
+    padding: 25px 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.content>button:hover {
+    background-color: #dde8dd;
+    color: rgb(1, 12, 3);
+    border-radius: 20px;
+}
+
+article>button {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+article>button:hover {
+    opacity: 1;
+}
+
+
+
+/* FOOTER SECTION */
+footer div {
+    display: flex;
+    width: 50%;
+    height: 5vh;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+footer .left>img {
+    height: 100%;
+    max-width: 300px;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 608px) {
+    section article {
+        flex-direction: column;
+        flex: 100%;
+        height: 100%;
+    }
+
+    nav ul li {
+        flex-direction: column;
+    }
+}
